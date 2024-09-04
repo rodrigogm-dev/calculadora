@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <!-- Proyecto: Calculadora -->
+</head>
+
+<body>
+  <div id="calculadora-box">
+    <div id="pantalla-box">
+      <input type="text" id="pantalla" disabled>
+    </div>
+    <div id="botones-box">
+      <div id="numeros-box">
+        <input type="button" id="btn-7" class="numeros" value="7" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-8" class="numeros" value="8" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-9" class="numeros" value="9" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-4" class="numeros" value="4" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-5" class="numeros" value="5" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-6" class="numeros" value="6" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-3" class="numeros" value="3" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-2" class="numeros" value="2" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-1" class="numeros" value="1" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-0" class="numeros" value="0" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-punto" class="numeros" value="." onclick="escribirPantalla(this)">
+        <input type="button" id="btn-igual" class="numeros" value="=" onclick="mostrarResultado()">
+      </div>
+      <div id="operaciones-box">
+        <input type="button" id="btn-clear" class="operaciones" value="C" onclick="borrarPantalla()">
+        <input type="button" id="btn-div" class="operaciones" value="/" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-mul" class="operaciones" value="*" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-dif" class="operaciones" value="-" onclick="escribirPantalla(this)">
+        <input type="button" id="btn-sum" class="operaciones" value="+" onclick="escribirPantalla(this)">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

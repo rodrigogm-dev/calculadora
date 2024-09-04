@@ -1,0 +1,74 @@
+/*Proyecto: Calculadora*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#calculadora-box {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: auto; /*el ancho depende de #botones-box*/
+  background-color: beige;
+}
+#pantalla-box {
+  border: 2px solid black;
+}
+#pantalla {
+  width: 100%;
+  line-height: 40px;
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  padding-right: 15px;
+  text-align: right;
+}
+#botones-box {
+  box-sizing: content-box;
+  display: flex;
+  padding: 15px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 200px;
+  width: auto; /*en ancho depende de la fuente de los botones*/
+}
+#numeros-box {
+  justify-content: space-between;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 75%;
+}
+.numeros {
+  font-size: 1.4rem;
+  height: 40px;
+  flex-basis: 30%;
+}
+#operaciones-box {
+  justify-content: flex-end;
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
+.operaciones {
+  font-size: 1.4rem;
+  height: 35px;
+  flex-basis: 80%;
+}
