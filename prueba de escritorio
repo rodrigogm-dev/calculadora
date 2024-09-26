@@ -1,8 +1,0 @@
-/*
-undefined && 1 , !(true && false) -> true escribe 1
-undefined && / , !(true && true) -> false
-1 && 1 , !(false && false) -> true escribe 1
-1 && * , !(false && true) -> true escribe *
-* && / , !(true && true) -> false pregunta de nuevo si es . entonces entra al else y reemplaza el caracter anterior  
-2 && . , !(false && true) -> true escribe .
-*/
